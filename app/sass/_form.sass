@@ -1,0 +1,83 @@
+.form 
+   background-color: #fff
+
+.form__inner 
+	background-color: #efefef
+	margin: 0 15px 15px 
+	padding-top: 0
+	padding-left: 0
+	padding-right: 0
+	padding-bottom: 52px
+	border: none
+	min-width: inherit
+
+.form__heading 
+	font-family: 'Open Sans', sans-serif
+	font-weight: 300
+	font-size: 40px
+	color: #545454
+	padding: 15px 0 20px 20px
+	margin: 0
+
+.form_position_mod 
+	//position: absolute
+	//width: 960px
+	padding-top: 15px
+
+.form__box-input 
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	-ms-align-items: center
+	align-items: center
+	font-family: 'Open Sans', sans-serif
+	font-weight: 400
+	font-size: 16px
+	color: #545454
+	margin-left: 20px
+	margin-right: 20px
+
+@media only screen and (max-width : 991px)
+	.form__inner
+		margin-bottom: 15px
+	.form__heading
+		font-size: 30px
+		padding-bottom: 15px
+	.form__box-input
+
+@media only screen and (max-width : 767px)
+	.form_position_mod
+		position: relative
+		width: 100%
+		margin: auto
+		padding-top: 10px
+	.form__inner
+		margin-left: 10px
+		margin-right: 10px
+	.form__heading
+		font-size: 26px
+		padding: 10px 15px
+	.form__box-input
+		font-size: 14px
+
+@media only screen and (max-width : 479px)
+	.form__inner
+		margin-left: 0
+		margin-right: 0
+		margin-bottom: 10px
+		box-shadow: 0 1px 6px rgba(35,31,32,.25)
+
+	.form_position_mod
+		padding-top: 0
+
+	.form__heading
+		font-size: 21px
+		padding-left: 10px
+		padding-right: 10px
+
+	.form__box-input
+		margin-left: 10px
+		margin-right: 10px
+		font-size: 12px

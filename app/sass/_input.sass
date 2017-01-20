@@ -1,0 +1,42 @@
+.input
+  &::placeholder
+    color: #989898
+    font-family: "Open Sans",sans-serif
+    font-weight: 300
+
+.input_theme_custom 
+  width: 365px
+  height: 38px
+  outline: none
+  border: 1px solid #d9dbe2
+  font-family: 'Open Sans', sans-serif
+  font-weight: 400
+  font-size: 16px
+  color: #545454
+  padding-left: 20px
+
+.input_theme_custom:focus
+  box-shadow: 0 0 2px rgba(72, 89, 166, 0.87) inset
+  outline: none
+  border-width: 0
+
+.input_theme_custom:focus + .box-input__hint
+  display: inline
+
+@media only screen and (max-width : 991px)
+  .input_theme_custom
+    width: inherit
+    flex-basis: 35%
+    webkit-flex-basis: 35%
+
+@media only screen and (max-width : 767px)
+  .input_theme_custom
+    font-size: 14px
+    width: inherit
+    flex-basis: 30%
+    webkit-flex-basis: 30%
+
+@media only screen and (max-width : 479px)
+  .input_theme_custom
+    flex-basis: 100%
+    webkit-flex-basis: 100%
